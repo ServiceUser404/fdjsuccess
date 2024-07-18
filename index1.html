@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deuxième Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: white;
+            padding: 10px 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .menu-icon {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            height: 24px;
+            cursor: pointer;
+        }
+
+        .menu-icon .line {
+            width: 25px;
+            height: 3px;
+            background-color: blue;
+        }
+
+        .logo {
+            width: 100px;
+            height: 50px; /* ajustez selon vos besoins */
+            background-color: lightgray; /* temporaire pour visualiser la place du logo */
+        }
+
+        .icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .icon {
+            width: 24px;
+            height: 24px;
+            margin-left: 20px;
+            fill: blue;
+            cursor: pointer;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 40px 20px;
+            flex-direction: column; /* Alignement en colonne des éléments */
+        }
+
+        .phone-image {
+            margin-bottom: 20px; /* Espacement sous l'image */
+            width: 150px; /* Ajustez la taille de l'image selon vos besoins */
+            height: auto;
+        }
+
+        .phone-details {
+            margin-bottom: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .indicator-message {
+            margin-bottom: 20px;
+            font-size: 16px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .delivery-options {
+            display: flex;
+            justify-content: center; /* Centrage horizontal des options de livraison */
+            align-items: center; /* Alignement vertical des options de livraison */
+            flex-wrap: wrap; /* Permet le retour à la ligne des options si nécessaire */
+        }
+
+        .delivery-option {
+            text-align: center;
+            margin: 10px; /* Marge entre chaque option de livraison */
+            flex: 1; /* Chaque option prend une largeur égale */
+        }
+
+        .delivery-option .logo {
+            width: 100px; /* Ajustez la taille des logos selon vos besoins */
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .company-name {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .delivery-cost {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .choose-btn {
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: bold;
+            color: white;
+            background-color: green;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+            font-size: 12px;
+            color: gray;
+        }
+
+        footer .highlight {
+            color: black;
+            font-weight: bold;
+        }
+
+        footer .legal-title {
+            font-weight: bold;
+            color: black;
+            display: block;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="logo"></div>
+        <div class="icons">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6V11c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5S10.5 3.17 10.5 4v.68C7.63 5.36 6 7.92 6 11v5l-1.99 2L4 19h16l-.01-1-1.99-2zm-2-.2L18 18H6l2-2.2V11c0-2.48 1.51-4.5 3.5-4.5s3.5 2.02 3.5 4.5v4.8z"/>
+            </svg>
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="none" stroke="blue" stroke-width="2"/>
+            </svg>
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" fill="blue"/>
+            </svg>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="phone-details">
+            <img class="phone-image" src="chemin/vers/image-iphone-14-pro-max.png" alt="iPhone 14 Pro Max">
+            <p><strong>iPhone 14 Prix Max 256 Go</strong></p>
+        </div>
+
+        <div class="indicator-message">Choisissez la livraison pour votre article</div>
+
+        <div class="delivery-options">
+            <div class="delivery-option">
+                <img class="logo" src="chemin/vers/logo-chronopost.png" alt="Logo Chronopost">
+                <div class="company-name">Chronopost</div>
+                <div class="delivery-cost">10€</div>
+                <button  onclick="window.location.href='index2.html';"  class="choose-btn">Choisir</button>
+            </div>
+            <div class="delivery-option">
+                <img class="logo" src="chemin/vers/logo-colissimo.png" alt="Logo Colissimo">
+                <div class="company-name">Colissimo</div>
+                <div class="delivery-cost">8€</div>
+                <button  onclick="window.location.href='index2.html';" class="choose-btn">Choisir</button>
+            </div>
+            <div class="delivery-option">
+                <img class="logo" src="chemin/vers/logo-dhl.png" alt="Logo DHL Express">
+                <div class="company-name">DHL Express</div>
+                <div class="delivery-cost">12€</div>
+                <button onclick="window.location.href='index2.html';" class="choose-btn">Choisir</button>
+            </div>
+            <!-- Ajoutez d'autres options de livraison selon vos besoins -->
+        </div>
+    </div>
+  <footer>
+        <div class="legal-notice">
+            <p><br><br><strong>Mentions légales</strong></p>
+            <p>(a21) Gain potentiel maximum obtenable au jeu "Coffre Très Difficile" du monde 3 - La Forêt Mystérieuse. Voir le règlement.</p>
+            <p><strong>Interdiction Volontaire de jeux</strong></p>
+            <p>Toute personne peut demander à être interdite de jeux. Cette demande est formée auprès de l'Autorité nationale des jeux. Cette interdiction est applicable dans les casinos, dans les clubs de jeux, sur les sites de jeux et de paris en ligne exploités par les opérateurs de jeux agréés en France, sur le site de jeux de loterie en ligne exploité par La Française des jeux ainsi que sur les bornes de jeux accessibles avec un compte joueur exploitées par les opérateurs titulaires de droits exclusifs, notamment La Française des jeux et le Pari mutuel urbain. Cette interdiction est prononcée pour une durée qui ne peut être inférieure à trois ans. Elle est renouvelable tacitement.</p>
+            <p>Votre identifiant de consentement est "124712338439820511928".</p>
+        </div>
+    </footer>
+</body>
+</html>
